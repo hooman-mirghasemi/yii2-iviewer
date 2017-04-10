@@ -1,0 +1,21 @@
+{
+    "name": "hooman.mirghasemi/yii2-iviewer",
+    "description": "iviewer can use for zoom and rotate image, it is use iviewer jquery plugin ",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","image","rotate","zoom"],
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Hooman Mirghasemi",
+            "email": "hooman.programmer@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "hoomanMirghasemi\\iviewer\\": ""
+        }
+    }
+}
