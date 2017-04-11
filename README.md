@@ -49,3 +49,98 @@ echo \hoomanMirghasemi\iviewer\Iviewer::widget([
     </div>
 </div>
 ```
+
+Or  you can use it as image gallery one or more in a page that open in a bootstrap modal with next and previwe buttons
+like this:
+
+first config iviewer module in config of application
+```php
+'modules' => [
+
+        'iviewer' => [
+            'class' => 'hoomanMirghasemi\iviewer\Module',
+            'loadingText' => 'loading ...',
+        ],
+    ],
+```
+
+for use it in a view file write code like this:
+ ```php
+ <?php
+ echo \hoomanMirghasemi\iviewer\IviewerGallery::widget([
+     'selectorId' => 'iviewer-gallery-1',
+     'modalCloseText' => 'close',
+ ]);
+ ?>
+ <div id="ivwever-gallery-1">
+     <div class="iviewer-gallery-item-holder">
+         <img 
+              src="https://example.com/images/xVwSS9.jpg"
+              data-iviewer-src="https://example.com/images/big-size/xVwSS9.jpg"
+              class="iviewer-gallery-item" data-target="#iviewer-gallery-1-modal" data-toggle="modal"/>
+     </div>
+     <div class="iviewer-gallery-item-holder">
+         <img 
+              src="https://example.com/images/xVwSS9.jpg"
+              data-iviewer-src="https://example.com/images/big-size/xVwSS9.jpg"
+              class="iviewer-gallery-item" data-target="#iviewer-gallery-1-modal" data-toggle="modal"/>
+     </div>
+     <div class="iviewer-gallery-item-holder">
+         <img 
+            src="https://example.com/images/xVwSS9.jpg"
+            data-iviewer-src="https://example.com/images/big-size/xVwSS9.jpg"
+            class="iviewer-gallery-item" data-target="#iviewer-gallery-1-modal" data-toggle="modal"/>
+     </div>
+     <div class="iviewer-gallery-item-holder">
+         <img 
+            src="https://example.com/images/xVwSS9.jpg"
+             data-iviewer-src="https://example.com/images/big-size/xVwSS9.jpg"
+             class="iviewer-gallery-item" data-target="#iviewer-gallery-1-modal" data-toggle="modal"/>
+     </div>
+ </div>
+ 
+ 
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ 
+ <?php
+ echo \hoomanMirghasemi\iviewer\IviewerGallery::widget([
+     'selectorId' => 'iviewer-gallery-2',
+     'modalCloseText' => 'close',
+ ]);
+ ?>
+ <div id="ivwever-gallery-2">
+     <div class="iviewer-gallery-item-holder">
+         <img
+                 src="https://example.com/images/xVwSS9.jpg"
+                 data-iviewer-src="https://example.com/images/big-size/xVwSS9.jpg"
+                 class="iviewer-gallery-item" data-target="#iviewer-gallery-2-modal" data-toggle="modal"/>
+     </div>
+     <div class="iviewer-gallery-item-holder">
+         <img 
+            src="https://example.com/images/xVwSS9.jpg"
+            data-iviewer-src="https://example.com/images/big-size/xVwSS9.jpg"
+            class="iviewer-gallery-item" data-target="#iviewer-gallery-2-modal" data-toggle="modal"/>
+     </div>
+     <div>
+         this is on html element between ivewer items
+     </div>
+     <div class="iviewer-gallery-item-holder">
+         <img 
+            src="https://example.com/images/xVwSS9.jpg"
+            data-iviewer-src="https://example.com/images/big-size/xVwSS9.jpg"
+            class="iviewer-gallery-item" 
+            data-target="#iviewer-gallery-2-modal" 
+            data-toggle="modal"/>
+     </div>
+     <span>test one element</span>
+ </div>
+ ```
+points: 
+be sure that selectorId and html element contains iviwer elements
+are same. and use iviewer-gallery-item-holder and iviewer-gallery-item classes for
+elements. data-target should be same with selectorId+"-modal". also
+data-iviewer-src is a necessary field

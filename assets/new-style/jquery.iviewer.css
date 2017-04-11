@@ -1,0 +1,98 @@
+.viewer {
+    -ms-touch-action: none;
+}
+
+.iviewer_common {
+    position:absolute;
+    bottom:10px;
+    height: 32px;
+    z-index: 5000;
+    border-radius: 30px;
+}
+
+.iviewer_cursor {
+    cursor: url(img/hand.cur) 6 8, pointer;
+}
+
+.iviewer_drag_cursor {
+    cursor: url(img/grab.cur) 6 8, pointer;
+}
+
+.iviewer_button {
+    width: 32px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.iviewer_zoom_in {
+    background: url("img/iviewer.zoom_in.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+    right: 177px;
+}
+
+.iviewer_zoom_out {
+    background: url("img/iviewer.zoom_out.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+    right: 135px;
+}
+
+.iviewer_zoom_zero {
+    background: url("img/iviewer.zoom_zero.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+    right: 100px;
+    display: none;
+}
+
+.iviewer_zoom_fit {
+    background: url("img/iviewer.zoom_fit.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+    right: 145px;
+    display: none;
+}
+
+.iviewer_zoom_status {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font: 12px/32px Sans;
+    right: 94px;
+    text-align: center;
+    width: 32px;
+}
+.iviewer_rotate_left {
+    background: url("img/iviewer.rotate_left.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+    right: 12px;
+}
+
+.iviewer_rotate_right {
+    background: url("img/iviewer.rotate_right.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+    right: 53px;
+}
+@media (max-width: 767px){
+    .iviewer_rotate_left {
+        background: url("img/iviewer.rotate_left.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+        right: 12px;
+    }
+
+    .iviewer_rotate_right {
+        background: url("img/iviewer.rotate_right.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+        right: 53px;
+    }
+    .iviewer_zoom_in {
+    background: url("img/iviewer.zoom_in.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+    right: 177px;
+    }
+
+    .iviewer_zoom_out {
+        background: url("img/iviewer.zoom_out.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+        right: 136px;
+    }
+
+    .iviewer_zoom_zero {
+        background: url("img/iviewer.zoom_zero.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+        right: 100px;
+        display: none;
+    }
+
+    .iviewer_zoom_fit {
+        background: url("img/iviewer.zoom_fit.png") no-repeat scroll center center rgba(0, 0, 0, 0.7);
+        right: 145px;
+        display: none;
+    }
+}

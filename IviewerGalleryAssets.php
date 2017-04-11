@@ -11,7 +11,7 @@ namespace hoomanMirghasemi\iviewer;
 
 use yii\web\AssetBundle;
 
-class IviewerAssets extends AssetBundle
+class IviewerGalleryAssets extends AssetBundle
 {
 
     public $sourcePath = '@hoomanMirghasemi/iviewer/assets';
@@ -27,8 +27,7 @@ class IviewerAssets extends AssetBundle
     ];
 
     public $css = [
-        'new-style/jquery.iviewer.css',
-        'iviewer.css',
+        'jquery.iviewer.css',
         'fontawesome/font-awesome.css',
     ];
 }

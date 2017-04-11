@@ -1,0 +1,81 @@
+#iviewer-bg{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8) !important;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+}
+#iviewer-body{
+    bottom: 0;
+    display: block;
+    height: 70%;
+    width: 53%;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 30;
+}
+#iviewer-close{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7) !important;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 33px;
+    height: 23px;
+    line-height: 21px;
+    position: absolute;
+    right: 6px;
+    text-align: center;
+    text-indent: 0;
+    top: 6px;
+    width: 23px;
+    color: #ffffff;
+    z-index: 35;
+    margin: 10px;
+}
+#iviewer-content{
+    background: #dfe3e4;
+    border: 5px solid #ffffff;
+    bottom: 0;
+    box-shadow: 0 0 28px 9px;
+    display: block;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 30;
+}
+.fa_delete_img{
+    margin-top: 4px;
+    font-size: 14px !important;
+    position: absolute;
+    margin-right: -5px;
+    right: 11px;
+}
+@media (max-width: 767px){
+    .iviewer_zoom_zero ,
+    .iviewer_zoom_fit{
+        display: none !important;
+        visibility: hidden;
+    }
+/*    .iviewer_zoom_status {
+        left: 109px;
+    }
+    .iviewer_rotate_left{
+        left: 145px;
+    }
+    .iviewer_rotate_right{
+        left: 190px;
+    }
+    #iviewer-content{
+        width: 79%;
+    }*/
+}
