@@ -1,8 +1,9 @@
 {
     "name": "hooman.mirghasemi/yii2-iviewer",
-    "description": "iviewer can use for zoom and rotate image, it is use iviewer jquery plugin ",
+    "description": "iviewer can use for zoom and rotate image, it is use iviewer jquery plugin , and iviewerGallery widget can use for 
+	some images open in modal with iviewer zoom and rotate",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","image","rotate","zoom"],
+    "keywords": ["yii2","extension","image","rotate","zoom","widget","gallery"],
     "license": "LGPL-3.0+",
     "authors": [
         {
