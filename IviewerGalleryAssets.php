@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hooman
- * Date: 4/10/2017
- * Time: 10:29 AM
- */
-
 namespace hoomanMirghasemi\iviewer;
 
 
@@ -18,10 +11,10 @@ class IviewerGalleryAssets extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
+        'yii\jui\JuiAsset',
     ];
 
     public $js = [
-        'jqueryui.js',
         'jquery.iviewer.js',
         'jquery.mousewheel.js',
     ];
