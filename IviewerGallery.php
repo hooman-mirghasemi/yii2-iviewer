@@ -107,6 +107,10 @@ class IviewerGallery extends \yii\base\Widget
                 $("#$this->modalId .iviewer-iframe").attr("prev-file-src",prevFileSrc);
             }
         });
+        
+        $('#$this->modalId').on('hidden.bs.modal', function () {
+          $(".iviewer-iframe").attr("src","");
+        });
 
 SETUP;
         Yii::$app->view->registerJs($jsCode, \yii\web\View::POS_END);
