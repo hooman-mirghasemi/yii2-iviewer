@@ -20,7 +20,7 @@ class IviewerGalleryAssets extends AssetBundle
     ];
 
     public $css = [
-        'jquery.iviewer.css',
+        'iviewer.css',
         'fontawesome/font-awesome.css',
     ];
 }
