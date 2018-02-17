@@ -24,7 +24,7 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
-
+Note : you should load fontAsome in your project before use it.
 Once the extension is installed, simply use it in your code by  :
 
 ```php
