@@ -21,6 +21,5 @@ class IviewerGalleryAssets extends AssetBundle
 
     public $css = [
         'iviewer.css',
-        'fontawesome/font-awesome.css',
     ];
 }

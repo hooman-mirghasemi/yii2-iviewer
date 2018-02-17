@@ -22,6 +22,5 @@ class IviewerAssets extends AssetBundle
     public $css = [
         'new-style/jquery.iviewer.css',
         'iviewer.css',
-        'fontawesome/font-awesome.css',
     ];
 }

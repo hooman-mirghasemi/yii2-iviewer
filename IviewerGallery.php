@@ -35,9 +35,9 @@ class IviewerGallery extends \yii\base\Widget
                     </button>
                 </div>
                 <div class="modal-body iv-modal-body iv_-modal_body_css">
-                    <div class="preview_img"><i class="fa fa-chevron-right"></i></div>
-                    <iframe class="iviewer-iframe" src="'.Yii::$app->urlManager->createAbsoluteUrl(['iviewer/default/index','fileSrc'=>'']).'" style="width: 100%; height: 500px; border:0;" file-src="" next-file-src="" prev-file-src=""></iframe>
-                    <div class="next_img"><i class="fa fa-chevron-left"></i></div>
+                    <div class="preview_img"><i class="fa fa-angle-right"></i></div>
+                    <iframe class="iviewer-iframe" src="" style="width: 100%; height: 500px; border:0;" file-src="" next-file-src="" prev-file-src=""></iframe>
+                    <div class="next_img"><i class="fa fa-angle-left"></i></div>
                 </div>
             </div>
 
