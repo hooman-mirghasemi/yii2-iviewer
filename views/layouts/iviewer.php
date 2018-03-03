@@ -1,6 +1,8 @@
 <?php
 use yii\helpers\Html;
 ?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
 <html>
     <head>
         <?= Html::csrfMetaTags() ?>
